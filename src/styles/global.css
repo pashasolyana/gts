@@ -1,0 +1,37 @@
+/* Подключение шрифта через Google Fonts (если вы выбрали этот способ) */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+/* Или использование локального шрифта, если вы загрузили файлы */
+@font-face {
+  font-family: 'Cabin';
+  src: url('../assets/fonts/Cabin-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Cabin-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('../assets/fonts/Cabin-Bold.woff2') format('woff2'),
+       url('../assets/fonts/Cabin-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('../assets/fonts/Cabin-Italic.woff2') format('woff2'),
+       url('../assets/fonts/Cabin-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Применение шрифта ко всему тексту */
+* {
+  font-family: 'Cabin', sans-serif !important;
+}
+
+/* Или более специфично, если не хотите затрагивать все элементы */
+body, p, label, input, textarea, button, a {
+  font-family: 'Cabin', sans-serif;
+}
